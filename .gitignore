@@ -1,0 +1,6 @@
+*.aux
+*.fls
+*.log
+*.gz
+*.fdb_latexmk
+*.dwf3work

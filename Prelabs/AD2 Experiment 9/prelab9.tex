@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\fancypagestyle{prelabheader} {
+    \rhead{Raeed Hassan \\ hassam41}
+    \lhead{\huge{ELECENG 2CI5 Lab 7 Prelab}}
+}
+\graphicspath{{./images/}}
+
+\begin{document}
+\newgeometry{margin=1in, includehead, head=47pt}
+\thispagestyle{prelabheader}
+i.
+\[
+\begin{gathered}
+    \alpha = \frac{1}{2RC} = \frac{1}{2 \cdot R\cdot 1nF} = \frac{1}{2\cdot R\cdot 1\times 10^{-9}} = \frac{500000000}{R}\; rad/s \\
+    \omega_0 = \frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{1.5\mu H \cdot 1nF}} = \frac{1}{\sqrt{1.5\times 10^{-6} \cdot 1\times 10^{-9}}} = 25819888.97\; rad/s \\
+    \zeta = \frac{\alpha}{\omega_0} = \frac{\frac{500000000}{R}\; rad/s}{25819888.97\; rad/s} = \frac{19.36}{R}
+\end{gathered}
+\]
+The value of $\zeta$ is dependent on $R$, therefore the system would be underdamped, critically damped, or overdamped at different values of R. In the given circuit, $R = (R_1\; ||\; R_2)$.
+
+ii.
+\[
+\begin{gathered}
+    1 = \zeta = \frac{\frac{500000000}{R}\; rad/s}{25819888.97\; rad/s} = \frac{19.36}{R} \\
+    1 = \frac{19.36}{R} \\
+    R = 19.36\Omega
+\end{gathered}
+\]
+$R = (R_1\; ||\; R2) = 19.36\Omega$. Therefore $2R = R_1 = R_2 = 38.72\Omega$. The value of $R_1 = R_2$ that results in the circuit being critically damped is $38.72\Omega$.
+
+iii.
+\begin{center}
+    \includegraphics[width=\textwidth]{q3.PNG}
+\end{center}
+\restoregeometry
+\clearpage
+iv.
+\begin{center}
+    \includegraphics[width=\textwidth]{q4.PNG}
+\end{center}
+v. The phase difference in part ii is $\ang{360}\cdot\frac{280ns}{3us} = \ang{33.6}$ or $2\pi\; rad\cdot\frac{280ns}{3us} = 0.59\; rad$. The phase difference in part iii is $\ang{360}\cdot\frac{140ns}{3us} = \ang{16.8}$ or $2\pi\; rad\cdot\frac{140ns}{3us} = 0.29\; rad$.
+
+vi.
+\begin{center}
+    \includegraphics[width=\textwidth]{q6.PNG}
+\end{center}
+\clearpage
+vii.
+\begin{center}
+    \includegraphics[width=\textwidth]{q7.PNG}
+\end{center}
+\end{document}
